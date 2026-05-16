@@ -479,6 +479,49 @@
       background: rgba(201,169,110,0.05);
     }
 
+    /* ─── TESTIMONIALS ─── */
+    #testimonials { background: var(--navy); }
+    .testimonials-header { max-width: 600px; margin-bottom: 4rem; }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.5rem;
+    }
+    .testimonial-card {
+      background: var(--navy2);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 2rem;
+      display: flex; flex-direction: column; gap: 1.2rem;
+      transition: border-color 0.25s;
+      position: relative;
+    }
+    .testimonial-card:hover { border-color: var(--gold); }
+    .testimonial-quote {
+      font-family: var(--serif);
+      font-size: 3rem; line-height: 1;
+      color: var(--gold); opacity: 0.4;
+      position: absolute; top: 1rem; right: 1.4rem;
+    }
+    .testimonial-text {
+      font-size: 0.9rem; color: var(--muted);
+      line-height: 1.85; flex: 1;
+      font-style: italic;
+    }
+    .testimonial-author {
+      display: flex; flex-direction: column; gap: 0.2rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+    }
+    .testimonial-name {
+      font-size: 0.88rem; font-weight: 500; color: var(--white);
+    }
+    .testimonial-role {
+      font-size: 0.72rem; letter-spacing: 0.1em;
+      text-transform: uppercase; color: var(--gold);
+    }
+
     /* ─── CONTACT ─── */
     #contact {
       text-align: center;
@@ -807,6 +850,63 @@
       <span class="value-tag">Enthusiastic</span>
       <span class="value-tag">Team player</span>
     </div>
+  </div>
+</section>
+
+<!-- ─── TESTIMONIALS ─── -->
+<section id="testimonials">
+  <div class="testimonials-header">
+    <div class="section-label reveal">Kind words</div>
+    <h2 class="reveal reveal-delay-1">What others say about<br /><em>working with me</em></h2>
+  </div>
+
+  <div class="testimonials-grid">
+
+    <div class="testimonial-card reveal">
+      <div class="testimonial-quote">"</div>
+      <div class="testimonial-text">Andy was well liked across the organisation and consistently demonstrated a high level of professionalism in his interactions with both clients and colleagues. He is extremely punctual, reliable, and brings a positive attitude to his work. I have no doubt that Andy will be a valuable addition to any team.</div>
+      <div class="testimonial-author">
+        <div class="testimonial-name">Russell McGrath</div>
+        <div class="testimonial-role">Head of Sales · Gro Clinics</div>
+      </div>
+    </div>
+
+    <div class="testimonial-card reveal reveal-delay-1">
+      <div class="testimonial-quote">"</div>
+      <div class="testimonial-text">Andrew approached his role with care and attention, ensuring every client felt supported and well informed throughout their hair restoration journey. Beyond his professional capability, Andrew was a true gentleman in the workplace. He treated colleagues and clients with respect, kindness, and consideration always. Andrew's presence had a positive impact on those around him, and he would be an asset to any organisation fortunate enough to have him on their team.</div>
+      <div class="testimonial-author">
+        <div class="testimonial-name">Sian B</div>
+        <div class="testimonial-role">Gro Clinics</div>
+      </div>
+    </div>
+
+    <div class="testimonial-card reveal reveal-delay-2">
+      <div class="testimonial-quote">"</div>
+      <div class="testimonial-text">Andy has delivered a fantastic contribution to the team through his massive support to the Leisure Business. The growth plans he developed as part of driving the Leisure Marketing Campaign Activation Toolkits, together with the work he did in initiating the partnership strategies, have been integral to supporting the growth we have seen. I would really like to thank Andy for his continued tenacity and endeavour in supporting the Marketing Strategy right up to his very last day.</div>
+      <div class="testimonial-author">
+        <div class="testimonial-name">Lee Pinnington</div>
+        <div class="testimonial-role">Marketing Director · DW Fitness First</div>
+      </div>
+    </div>
+
+    <div class="testimonial-card reveal reveal-delay-1">
+      <div class="testimonial-quote">"</div>
+      <div class="testimonial-text">Loved every minute of working with Andy — hard working, dedicated and loyal. He was always open to trying new things and always gave 110%. People like Andy are few and far between.</div>
+      <div class="testimonial-author">
+        <div class="testimonial-name">Marc Kinvig</div>
+        <div class="testimonial-role">Hairline Clinic</div>
+      </div>
+    </div>
+
+    <div class="testimonial-card reveal reveal-delay-2">
+      <div class="testimonial-quote">"</div>
+      <div class="testimonial-text">I had the pleasure of recruiting and working with Andrew at Gro Clinics. He builds strong relationships with clients and is always professional, kind and dependable in his approach. Andrew has a natural ability to make people feel comfortable and supported. He is a trusted member of the team and someone colleagues enjoy working with. I would happily recommend him to any organisation looking for someone who genuinely cares about their work and the people around them.</div>
+      <div class="testimonial-author">
+        <div class="testimonial-name">Nina Pampel</div>
+        <div class="testimonial-role">Head of HR · Gro Clinics</div>
+      </div>
+    </div>
+
   </div>
 </section>
 
